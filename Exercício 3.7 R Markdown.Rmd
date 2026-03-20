@@ -1,0 +1,28 @@
+---
+title: "Exercício 3.7 R Markdown"
+author: "Davi Camargo"
+date: "2026-03-20"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Tabela com as 10 primeiras linhas:
+```{r, echo=FALSE}
+pib_cid <- readRDS("pib_cid.RDS")
+library(knitr)
+kable(head(pib_cid, 10))
+```
+
+Gráfico:
+```{r, echo=FALSE}
+library(tidyverse)
+pib_cid %>%
+  group_by(nome_regiao) %>%
+  summarise(pib_regiao = sum(pib_total)) %>%
+  ggplot(aes(x = nome_regiao, y = pib_regiao)) +
+  geom_col() +
+  labs(title = "PIB por Regiao do Brasil", x = "Regiao", y = "PIB")
+```
