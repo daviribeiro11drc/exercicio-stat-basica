@@ -1,4 +1,4 @@
-teste <- c(1:100)
+teste <- c(1:200)
 mean(teste)
 min(teste)
-sum(teste)*2
+teste2 <- teste*2
