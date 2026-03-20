@@ -9,10 +9,12 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Exercício 3.6** R Markdown *Lista 2*:
+a)**Um parágrafo com texto em negrito.**
+b)*Um parágrafo com texto em itálico.*
 
-1. Palavras em negrito ("Exercício 3.6")
-2. Palavras em itálico ("Lista 2")
+c) Lista:
+1. Texto em negrito
+2. Texto em itálico
 3. Lista
 4. Chunk
 
@@ -20,6 +22,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 teste <- c(1:100)
-sum(teste)
+mean(teste)
 ```
 
