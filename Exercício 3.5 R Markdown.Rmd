@@ -11,8 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Exercício 3.6** R Markdown *Lista 2*:
 
-1. Palavras em negrito (Exercício 3.6)
-2. Palavras em itálico (Exercício 3.5)
+1. Palavras em negrito ("Exercício 3.6")
+2. Palavras em itálico ("Lista 2")
 3. Lista
 4. Chunk
 
