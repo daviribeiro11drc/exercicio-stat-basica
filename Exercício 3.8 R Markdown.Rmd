@@ -1,0 +1,24 @@
+---
+title: "Exercício 3.8 R Markdown"
+author: "Davi Camargo"
+date: "2026-03-23"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+a)
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+
+b)
+```{r}
+pib_cid <- readRDS("pib_cid.RDS")
+mean(pib_cid$pib_per_capita)
+```
+
+c)
+A média do pib per capita dos municípios é `r mean(pib_cid$pib_per_capita)`.
